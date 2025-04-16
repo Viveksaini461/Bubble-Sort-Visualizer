@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bubble Sort Visualizer</title>
+  
+</head>
+<body>
+  <h2>Bubble Sort Visualizer</h2>
+
+  <div>
+    <label>Array Size: </label>
+    <input type="number" id="array-size" min="1" max="50" placeholder="e.g. 20"/>
+  </div>
+
+  <div>
+    <label>Custom Array (comma-separated):</label><br>
+    <input type="text" id="custom-array" placeholder="e.g. 10,30,5,70"/>
+  </div>
+
+  <button onclick="generateArray()">Generate Array</button>
+  <button onclick="bubbleSort()">Start Bubble Sort</button>
+
+  <div id="array-container"></div>
+
+  <script>
+    let array = [];
+
+    function generateArray() {
+      array = [];
+      const sizeInput = document.getElementById('array-size').value.trim();
+      const customInput = document.getElementById('custom-array').value.trim();
+      const container = document.getElementById('array-container');
+      container.innerHTML = '';
+
+      let values = [];
+
+      // If custom input is given
+      if (customInput) {
+        values = customInput.split(',').map(val => Number(val.trim()));
+        if (values.some(isNaN)) {
+          alert("Invalid custom array. Make sure all values are numbers.");
+          return;
+        }
+
+        if (sizeInput && parseInt(sizeInput) !== values.length) {
+          alert("Array size does not match the number of elements entered.");
+          return;
+        }
+      } 
+      // Else if only size is given
+      else if (sizeInput) {
+        const size = parseInt(sizeInput);
+        for (let i = 0; i < size; i++) {
+          values.push(Math.floor(Math.random() * 100) + 1);
+        }
+      } else {
+        alert("Please enter array size or custom array!");
+        return;
+      }
+
+      array = values;
+
+      for (let i = 0; i < array.length; i++) {
+        const bar = document.createElement('div');
+        bar.classList.add('bar');
+        bar.style.height = array[i] * 3 + 'px';
+        bar.innerText = array[i];
+        container.appendChild(bar);
+      }
+    }
+
+    async function bubbleSort() {
+      const bars = document.getElementsByClassName('bar');
+      for (let i = 0; i < array.length - 1; i++) {
+        for (let j = 0; j < array.length - i - 1; j++) {
+          bars[j].style.backgroundColor = 'red';
+          bars[j + 1].style.backgroundColor = 'red';
+          if (array[j] > array[j + 1]) {
+            await new Promise(resolve => setTimeout(resolve, 200));
+            [array[j], array[j + 1]] = [array[j + 1], array[j]];
+            bars[j].style.height = array[j] * 3 + 'px';
+            bars[j].innerText = array[j];
+            bars[j + 1].style.height = array[j + 1] * 3 + 'px';
+            bars[j + 1].innerText = array[j + 1];
+          }
+          bars[j].style.backgroundColor = '#3498db';
+          bars[j + 1].style.backgroundColor = '#3498db';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

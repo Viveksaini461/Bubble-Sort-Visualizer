@@ -1,0 +1,22 @@
+/* Memory Match styles */
+.memory-theme { display: grid; grid-template-columns: 320px 1fr; gap: 18px; }
+@media (max-width: 900px) { .memory-theme { grid-template-columns: 1fr; } }
+
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+.controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: min(520px, 100%); }
+.card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transform-style: preserve-3d;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+.card.flip { transform: rotateY(180deg); }
+.card .face {
+  position: absolute; inset: 0; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 12px;
+}
+.card .front { background: var(--surface); }
+.card .back { background: linear-gradient(135deg, #7c3aed33, #06b6d433); transform: rotateY(180deg); font-size: clamp(28px, 6vw, 44px); }

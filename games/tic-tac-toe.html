@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Tic Tac Toe online at PlayZone. 3x3 classic with AI and 2-player modes. Track wins and save your score to the local leaderboard.">
+  <meta name="keywords" content="tic tac toe, tictactoe, xo game, 3x3, play online">
+  <meta name="author" content="PlayZone">
+  <title>Tic Tac Toe - PlayZone</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/games/tic-tac-toe.css">
+  <link rel="canonical" href="https://playzone.example/games/tic-tac-toe.html">
+
+  <meta property="og:title" content="Tic Tac Toe - PlayZone">
+  <meta property="og:description" content="3x3 Tic Tac Toe with AI and 2-player modes. Mobile-friendly and fast.">
+  <meta property="og:image" content="https://playzone.example/assets/og-image.svg">
+  <meta property="og:url" content="https://playzone.example/games/tic-tac-toe.html">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tic Tac Toe",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "url": "https://playzone.example/games/tic-tac-toe.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PlayZone"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="PlayZone Logo" width="32" height="32">
+        <span>PlayZone</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="toggle-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Tic Tac Toe</h1>
+      <p>Place three in a row to win. Choose AI or 2-player mode. Tap or click a cell to mark it.</p>
+    </section>
+
+    <section class="game-wrap ttt-theme">
+      <div class="game-sidebar">
+        <div class="panel">
+          <h3>Instructions</h3>
+          <ol>
+            <li>Select a mode and who starts.</li>
+            <li>Tap an empty cell to place your mark.</li>
+            <li>First to align three marks wins.</li>
+          </ol>
+        </div>
+
+        <div class="panel">
+          <h3>Leaderboard</h3>
+          <div id="leaderboard"></div>
+          <div class="save-score">
+            <input id="playerName" type="text" placeholder="Your name" maxlength="24">
+            <button id="saveScore" class="btn">Save Score</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-main">
+        <div class="controls">
+          <label>
+            Mode
+            <select id="mode">
+              <option value="ai">Vs AI</option>
+              <option value="pvp">2 Players</option>
+            </select>
+          </label>
+          <label id="aiSideWrap">
+            You play
+            <select id="aiSide">
+              <option value="X">X</option>
+              <option value="O">O</option>
+            </select>
+          </label>
+          <button id="restart" class="btn">Restart</button>
+        </div>
+
+        <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board">
+          <button class="cell" data-idx="0" aria-label="cell 1"></button>
+          <button class="cell" data-idx="1" aria-label="cell 2"></button>
+          <button class="cell" data-idx="2" aria-label="cell 3"></button>
+          <button class="cell" data-idx="3" aria-label="cell 4"></button>
+          <button class="cell" data-idx="4" aria-label="cell 5"></button>
+          <button class="cell" data-idx="5" aria-label="cell 6"></button>
+          <button class="cell" data-idx="6" aria-label="cell 7"></button>
+          <button class="cell" data-idx="7" aria-label="cell 8"></button>
+          <button class="cell" data-idx="8" aria-label="cell 9"></button>
+        </div>
+
+        <div class="status">
+          <div>Turn: <strong id="turn">X</strong></div>
+          <div>Result: <strong id="result">In progress</strong></div>
+        </div>
+
+        <div class="score">
+          <div>Wins: <strong id="wins">0</strong></div>
+          <div>Losses: <strong id="losses">0</strong></div>
+          <div>Draws: <strong id="draws">0</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> PlayZone. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/utils.js" defer></script>
+  <script src="/assets/js/games/tic-tac-toe.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About PlayZone - a fast, mobile-friendly site with free web games like Tic Tac Toe, Snake, Memory Match, Rock Paper Scissors, and Typing Speed Test.">
+  <meta name="keywords" content="about playzone, web games, free games">
+  <meta name="author" content="PlayZone">
+  <title>About PlayZone</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="canonical" href="https://playzone.example/about.html">
+
+  <meta property="og:title" content="About PlayZone">
+  <meta property="og:description" content="Learn about PlayZone, a modern, responsive hub for classic and casual web games.">
+  <meta property="og:image" content="https://playzone.example/assets/og-image.svg">
+  <meta property="og:url" content="https://playzone.example/about.html">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About PlayZone",
+    "url": "https://playzone.example/about.html",
+    "description": "About PlayZone - a fast, mobile-friendly site with free web games."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="PlayZone Logo" width="32" height="32">
+        <span>PlayZone</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link active" href="/about.html">About</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="toggle-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>About PlayZone</h1>
+      <p>PlayZone is a lightweight, privacy-conscious site offering free browser games that run on any device.</p>
+    </section>
+
+    <section>
+      <h2>Our mission</h2>
+      <p>Deliver delightful, fast, and fair games that anyone can play in seconds—no logins, no installs.</p>
+
+      <h2>What you can play</h2>
+      <ul>
+        <li>Tic Tac Toe with AI or local 2-player</li>
+        <li>Snake with adjustable speed</li>
+        <li>Rock Paper Scissors with animations</li>
+        <li>Memory Card Match with a countdown timer</li>
+        <li>Typing Speed Test with WPM & accuracy</li>
+      </ul>
+
+      <h2>Privacy first</h2>
+      <p>We store only essential data in your browser via localStorage to track scores and leaderboards.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> PlayZone. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

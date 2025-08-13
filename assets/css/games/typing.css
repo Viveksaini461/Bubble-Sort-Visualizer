@@ -1,0 +1,20 @@
+/* Typing Test styles */
+.typing-theme { display: grid; grid-template-columns: 320px 1fr; gap: 18px; }
+@media (max-width: 900px) { .typing-theme { grid-template-columns: 1fr; } }
+
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+.controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+
+.prompt {
+  width: min(700px, 100%);
+  min-height: 110px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f133, #0ea5e933);
+  font-size: 16px;
+}
+#input {
+  width: min(700px, 100%);
+  margin-top: 10px;
+}

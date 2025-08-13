@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlayZone - Free online games like Tic Tac Toe, Snake, Memory Match, Rock Paper Scissors, and Typing Speed Test. Play and challenge your friends!">
+  <meta name="keywords" content="online games, tic tac toe, snake game, rock paper scissors, memory match, typing speed test, free games">
+  <meta name="author" content="PlayZone">
+  <title>PlayZone - Free Online Games</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="canonical" href="https://playzone.example/">
+
+  <meta property="og:title" content="PlayZone - Free Online Games">
+  <meta property="og:description" content="PlayZone - Free online games like Tic Tac Toe, Snake, Memory Match, Rock Paper Scissors, and Typing Speed Test. Play and challenge your friends!">
+  <meta property="og:image" content="https://playzone.example/assets/og-image.svg">
+  <meta property="og:url" content="https://playzone.example/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PlayZone",
+    "url": "https://playzone.example/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://playzone.example/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <noscript>JavaScript is required to play the games on PlayZone.</noscript>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="PlayZone Logo" width="32" height="32">
+        <span>PlayZone</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="toggle-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+    <div class="ad-placeholder ad-banner" aria-label="Ad banner placeholder">
+      <!-- Google AdSense banner placeholder (728x90 or responsive)
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="YYYYYYYYYY" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <span>Ad Banner</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Play free, fast, and fun web games</h1>
+      <p>Challenge yourself and your friends with our growing collection of classic and casual games.</p>
+    </section>
+
+    <section class="game-grid" aria-label="Game list">
+      <a class="game-card ttt" href="/games/tic-tac-toe.html" aria-label="Play Tic Tac Toe">
+        <div class="card-media">#</div>
+        <div class="card-body">
+          <h2>Tic Tac Toe</h2>
+          <p>3x3 classic. Play vs AI or 2 players.</p>
+        </div>
+      </a>
+      <a class="game-card snake" href="/games/snake.html" aria-label="Play Snake">
+        <div class="card-media">S</div>
+        <div class="card-body">
+          <h2>Snake</h2>
+          <p>Eat apples. Adjust speed to your liking.</p>
+        </div>
+      </a>
+      <a class="game-card rps" href="/games/rock-paper-scissors.html" aria-label="Play Rock Paper Scissors">
+        <div class="card-media">✊</div>
+        <div class="card-body">
+          <h2>Rock Paper Scissors</h2>
+          <p>Animated choices. Beat the computer.</p>
+        </div>
+      </a>
+      <a class="game-card memory" href="/games/memory.html" aria-label="Play Memory Match">
+        <div class="card-media">🧠</div>
+        <div class="card-body">
+          <h2>Memory Match</h2>
+          <p>Flip cards, find pairs. Beat the timer.</p>
+        </div>
+      </a>
+      <a class="game-card typing" href="/games/typing.html" aria-label="Play Typing Speed Test">
+        <div class="card-media">⌨️</div>
+        <div class="card-body">
+          <h2>Typing Speed Test</h2>
+          <p>Measure WPM and accuracy in 60s.</p>
+        </div>
+      </a>
+    </section>
+
+    <div class="ad-placeholder ad-rectangle" aria-label="Ad rectangle placeholder">
+      <!-- Google AdSense rectangle placeholder (300x250/336x280 or responsive)
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXX" data-ad-slot="ZZZZZZZZZZ" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      -->
+      <span>Ad Rectangle</span>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> PlayZone. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

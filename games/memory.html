@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Memory Match at PlayZone. Flip cards, find pairs, and beat the countdown timer.">
+  <meta name="keywords" content="memory, card match, pairs, game, play online">
+  <meta name="author" content="PlayZone">
+  <title>Memory Match - PlayZone</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/games/memory.css">
+  <link rel="canonical" href="https://playzone.example/games/memory.html">
+
+  <meta property="og:title" content="Memory Match - PlayZone">
+  <meta property="og:description" content="Flip cards and find all pairs before time runs out.">
+  <meta property="og:image" content="https://playzone.example/assets/og-image.svg">
+  <meta property="og:url" content="https://playzone.example/games/memory.html">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#7c3aed">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Memory Match",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "url": "https://playzone.example/games/memory.html",
+    "publisher": {"@type": "Organization", "name": "PlayZone"}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="PlayZone Logo" width="32" height="32">
+        <span>PlayZone</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="toggle-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Memory Match</h1>
+      <p>Flip two cards to find a pair. Match all pairs before the timer hits zero.</p>
+    </section>
+
+    <section class="game-wrap memory-theme">
+      <div class="game-sidebar">
+        <div class="panel">
+          <h3>Instructions</h3>
+          <ol>
+            <li>Press Start to begin the countdown.</li>
+            <li>Flip two cards to find matching pairs.</li>
+            <li>Match all pairs before time runs out.</li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>Leaderboard</h3>
+          <div id="leaderboard"></div>
+          <div class="save-score">
+            <input id="playerName" type="text" placeholder="Your name" maxlength="24">
+            <button id="saveScore" class="btn">Save Score</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-main">
+        <div class="controls">
+          <div>Time: <strong id="time">60</strong>s</div>
+          <div>Matches: <strong id="matches">0</strong>/8</div>
+          <div>Moves: <strong id="moves">0</strong></div>
+          <button id="start" class="btn">Start</button>
+          <button id="restart" class="btn">Restart</button>
+        </div>
+        <div id="grid" class="grid" aria-label="Memory grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> PlayZone. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/utils.js" defer></script>
+  <script src="/assets/js/games/memory.js" defer></script>
+</body>
+</html>

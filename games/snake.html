@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Play Snake at PlayZone. Eat apples, avoid walls, and set your high score. Adjust speed for more challenge.">
+  <meta name="keywords" content="snake game, snake, arcade, play online">
+  <meta name="author" content="PlayZone">
+  <title>Snake - PlayZone</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/games/snake.css">
+  <link rel="canonical" href="https://playzone.example/games/snake.html">
+
+  <meta property="og:title" content="Snake - PlayZone">
+  <meta property="og:description" content="Classic Snake with adjustable speed. Mobile-friendly controls.">
+  <meta property="og:image" content="https://playzone.example/assets/og-image.svg">
+  <meta property="og:url" content="https://playzone.example/games/snake.html">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#22c55e">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Snake",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web",
+    "url": "https://playzone.example/games/snake.html",
+    "publisher": {"@type": "Organization", "name": "PlayZone"}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/logo.svg" alt="PlayZone Logo" width="32" height="32">
+        <span>PlayZone</span>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <span class="toggle-icon" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Snake</h1>
+      <p>Use arrow keys or on-screen controls. Eat apples to grow. Don't crash!</p>
+    </section>
+
+    <section class="game-wrap snake-theme">
+      <div class="game-sidebar">
+        <div class="panel">
+          <h3>Instructions</h3>
+          <ul>
+            <li>Press Start, then use arrow keys or D-pad.</li>
+            <li>Each apple increases your length and score.</li>
+            <li>Adjust speed for a tougher challenge.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Leaderboard</h3>
+          <div id="leaderboard"></div>
+          <div class="save-score">
+            <input id="playerName" type="text" placeholder="Your name" maxlength="24">
+            <button id="saveScore" class="btn">Save Score</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-main">
+        <div class="controls">
+          <label>
+            Speed
+            <input id="speed" type="range" min="5" max="20" value="10">
+          </label>
+          <button id="start" class="btn">Start</button>
+          <button id="restart" class="btn">Restart</button>
+          <div class="score">Score: <strong id="score">0</strong></div>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="canvas" width="420" height="420" aria-label="Snake canvas"></canvas>
+          <div class="dpad" aria-hidden="false">
+            <button data-dir="up" aria-label="Up">▲</button>
+            <div class="middle">
+              <button data-dir="left" aria-label="Left">◀</button>
+              <button data-dir="right" aria-label="Right">▶</button>
+            </div>
+            <button data-dir="down" aria-label="Down">▼</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">© <span id="year"></span> PlayZone. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms & Conditions</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/utils.js" defer></script>
+  <script src="/assets/js/games/snake.js" defer></script>
+</body>
+</html>

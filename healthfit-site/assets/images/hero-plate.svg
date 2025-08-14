@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A balanced plate showing vegetables, protein, and whole grains">
+	<circle cx="320" cy="180" r="150" fill="#ffffff" stroke="#c9e3ea"/>
+	<path d="M320 180 L470 180 A150 150 0 0 0 320 30z" fill="#8cd4e6"/>
+	<path d="M320 180 L320 30 A150 150 0 0 0 170 180z" fill="#f6ae2d"/>
+	<path d="M320 180 L170 180 A150 150 0 0 0 320 330z" fill="#1f7a8c"/>
+</svg>

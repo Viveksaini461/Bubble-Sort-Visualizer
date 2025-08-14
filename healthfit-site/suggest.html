@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suggest a Topic — HealthFit Guide</title>
+	<meta name="description" content="Tell us what you want to learn next. We read every suggestion.">
+	<link rel="canonical" href="https://yourdomain.com/suggest.html">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<script defer src="assets/js/app.js"></script>
+</head>
+<body>
+	<div id="site-header"></div>
+	<main class="container main">
+		<h1>Suggest a Topic</h1>
+		<p>What health, nutrition, or fitness topic should we cover next? Share your idea below.</p>
+		<form id="suggest-form" class="form" novalidate>
+			<div class="form-row">
+				<label for="s-name">Name</label>
+				<input id="s-name" class="input" type="text" placeholder="Your name (optional)">
+			</div>
+			<div class="form-row">
+				<label for="s-email">Email</label>
+				<input id="s-email" class="input" type="email" placeholder="you@example.com (optional)">
+			</div>
+			<div class="form-row">
+				<label for="s-topic">Topic idea</label>
+				<input id="s-topic" class="input" type="text" placeholder="e.g., How much protein do I need?" required>
+			</div>
+			<div class="form-row">
+				<label for="s-details">Details</label>
+				<textarea id="s-details" class="input" rows="6" placeholder="Add any details or questions"></textarea>
+			</div>
+			<button class="btn" type="submit">Send suggestion</button>
+			<div id="suggest-msg" class="small" role="status" style="margin-top:8px;"></div>
+		</form>
+	</main>
+	<div id="site-footer"></div>
+</body>
+</html>

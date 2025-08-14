@@ -1,0 +1,118 @@
+{
+	"authors": [
+		{
+			"id": "maya-chen",
+			"name": "Maya Chen, RD, MS",
+			"title": "Registered Dietitian & Sports Nutritionist",
+			"bio": "Maya is a board-certified dietitian specializing in sports nutrition and metabolic health. She blends evidence-based science with practical habits.",
+			"avatar": "assets/images/avatar-maya.svg"
+		},
+		{
+			"id": "david-ross",
+			"name": "David Ross, CPT",
+			"title": "Certified Personal Trainer",
+			"bio": "David helps busy professionals build strength and mobility at home using minimal equipment.",
+			"avatar": "assets/images/avatar-david.svg"
+		}
+	],
+	"articles": [
+		{
+			"id": 1,
+			"slug": "balanced-plate-guide",
+			"title": "The Balanced Plate: A Practical Guide to Building Healthy Meals",
+			"excerpt": "A simple, science-backed method to build nourishing meals without counting every calorie.",
+			"category": "Nutrition",
+			"tags": ["meal planning", "macros", "healthy eating"],
+			"authorId": "maya-chen",
+			"date": "2025-07-01",
+			"readingTime": 9,
+			"image": "assets/images/hero-plate.svg",
+			"imageAlt": "A balanced plate showing vegetables, protein, and whole grains",
+			"isTrending": true
+		},
+		{
+			"id": 2,
+			"slug": "supplements-beginners-guide",
+			"title": "Supplements 101: What to Take, What to Skip, and How to Buy Smart",
+			"excerpt": "A beginner-friendly overview of common supplements, dosages, quality, and red flags.",
+			"category": "Supplements",
+			"tags": ["vitamin d", "omega-3", "creatine"],
+			"authorId": "maya-chen",
+			"date": "2025-07-05",
+			"readingTime": 12,
+			"image": "assets/images/hero-supplements.svg",
+			"imageAlt": "Bottles and capsules representing common supplements",
+			"isTrending": true
+		},
+		{
+			"id": 3,
+			"slug": "mental-fitness-habits",
+			"title": "Mental Fitness at Home: Daily Habits to Reduce Stress and Sleep Better",
+			"excerpt": "Small, consistent rituals that build emotional resilience and improve sleep quality.",
+			"category": "Mental Health",
+			"tags": ["sleep", "stress", "mindfulness"],
+			"authorId": "maya-chen",
+			"date": "2025-07-10",
+			"readingTime": 10,
+			"image": "assets/images/hero-mental.svg",
+			"imageAlt": "A calm brain icon with a moon and stars for sleep",
+			"isTrending": false
+		},
+		{
+			"id": 4,
+			"slug": "sustainable-weight-loss",
+			"title": "Sustainable Weight Loss: Strategies That Actually Work (and Last)",
+			"excerpt": "Forget crash diets. Use systems that make healthy choices the easy default.",
+			"category": "Weight Loss",
+			"tags": ["calorie balance", "habits", "protein"],
+			"authorId": "maya-chen",
+			"date": "2025-07-15",
+			"readingTime": 13,
+			"image": "assets/images/hero-weight.svg",
+			"imageAlt": "Scale with footprints and a leaf for sustainable weight loss",
+			"isTrending": true
+		},
+		{
+			"id": 5,
+			"slug": "home-workout-blueprint",
+			"title": "Home Workout Blueprint: 4-Week Plan with No Equipment",
+			"excerpt": "A progressive, joint-friendly program that fits in your living room.",
+			"category": "Home Workouts",
+			"tags": ["bodyweight", "strength", "mobility"],
+			"authorId": "david-ross",
+			"date": "2025-07-20",
+			"readingTime": 11,
+			"image": "assets/images/hero-workout.svg",
+			"imageAlt": "Exercise mat, water bottle, and dumbbell icons",
+			"isTrending": false
+		},
+		{
+			"id": 6,
+			"slug": "best-whey-protein-2025",
+			"title": "Best Whey Protein Powders of 2025 — Tested and Reviewed",
+			"excerpt": "We compared mixability, taste, protein quality, sweeteners, and value across top brands.",
+			"category": "Product Reviews",
+			"tags": ["whey", "protein", "reviews"],
+			"authorId": "maya-chen",
+			"date": "2025-07-25",
+			"readingTime": 14,
+			"image": "assets/images/hero-review-whey.svg",
+			"imageAlt": "Protein shaker and jar with star rating",
+			"isTrending": true
+		}
+	],
+	"comments": [
+		{
+			"articleId": 6,
+			"author": "Sam K.",
+			"date": "2025-07-26",
+			"text": "Helpful breakdown of sweeteners. The table made it easy to choose."
+		},
+		{
+			"articleId": 4,
+			"author": "Priya",
+			"date": "2025-07-21",
+			"text": "Loved the habit stacking tips. Finally something sustainable."
+		}
+	]
+}

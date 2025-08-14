@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Protein shaker and jar with star rating">
+	<rect x="180" y="80" width="120" height="180" rx="12" fill="#1f7a8c"/>
+	<rect x="330" y="70" width="90" height="190" rx="10" fill="#eaf6f9" stroke="#c9e3ea"/>
+	<polygon points="330,70 420,70 410,50 340,50" fill="#8cd4e6"/>
+	<g fill="#f6ae2d">
+		<polygon points="260,270 266,286 284,286 269,296 275,312 260,302 245,312 251,296 236,286 254,286"/>
+		<polygon points="360,270 366,286 384,286 369,296 375,312 360,302 345,312 351,296 336,286 354,286"/>
+	</g>
+</svg>

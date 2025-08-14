@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Healthy plate, dumbbells, and a heart icon">
+	<defs>
+		<linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#eaf6f9"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+	</defs>
+	<rect width="960" height="540" fill="url(#g)"/>
+	<circle cx="320" cy="280" r="110" fill="#fff" stroke="#c9e3ea"/>
+	<circle cx="280" cy="280" r="34" fill="#8cd4e6"/>
+	<rect x="540" y="250" width="44" height="120" rx="8" fill="#1f7a8c"/>
+	<rect x="626" y="250" width="44" height="120" rx="8" fill="#1f7a8c"/>
+	<rect x="584" y="222" width="44" height="176" rx="8" fill="#eaf6f9" stroke="#c9e3ea"/>
+	<path d="M420 180c30-30 80-30 110 0s30 80 0 110l-55 55-55-55c-30-30-30-80 0-110z" fill="#f6ae2d"/>
+	<path d="M470 206l15 24 12-10 20 28" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+</svg>
